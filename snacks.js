@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let form = document.querySelector(".add-form")
     form.addEventListener("submit", addSnack)
-    
+   
 })
 
 function snackDisplay(snack){
@@ -46,21 +46,29 @@ function snackDisplay(snack){
 
 function addSnack(e){
     e.preventDefault()
-    
-    let inputName = e.target[0].value
-    let inputFlavor = e.target[2].value
-    let inputCalories = e.target[3].value
-    let inputImg = e.target[4].value
 
-    addSnackAPI(inputName, inputProductType, inputFlavor, inputCalories, inputImg)
-    .then(val => snackDisplay(val))
+    let inputName = e.target[0].value
+    let inputFlavor = e.target[1].value
+    let inputCalories = e.target[2].value
+  
+    // let inputImg = e.target[3].value
+    imags(inputName)
+    .then(res => {
+        if(res.products.length === 0) {
+            alert('Snack Not Available')
+        }else {
+        let img = res.products[0].images[0].base_url+res.products[0].images[0].primary
+        addSnackAPI(inputName, inputFlavor, inputCalories,img)
+        .then(val => snackDisplay(val))
+         }
+    })
+    
 }
 
-async function addSnackAPI(name, type, flavor, calories, img){
+async function addSnackAPI(name, flavor, calories, img){
     let snacks = {
         brand_name : name,
         calories : calories,
-        product_type : type,
         flavor : flavor,
         image : img
     }
@@ -95,6 +103,19 @@ async function removeSnackAPI(snackCard, snackId){
     await fetch(`http://localhost:3000/snacks/${snackId}`, options)
 
     document.getElementById("collection").removeChild(snackCard)
+}
+
+
+async function imags(input) {
+ let res = await fetch(`https://target-com-store-product-reviews-locations-data.p.rapidapi.com/product/search?store_id=3991&keyword=${input}&sponsored=1&limit=1&offset=0`, {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "3e0fa96457mshe4216ced8e5b3ccp1aba84jsne35b12b8a58a",
+		"x-rapidapi-host": "target-com-store-product-reviews-locations-data.p.rapidapi.com"
+	}
+})
+let val = await res.json()
+return val
 }
 
 async function load(){

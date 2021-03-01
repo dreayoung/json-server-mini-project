@@ -4,50 +4,61 @@
     <meta charset="utf-8" />
     <title>Fetch Mini Project</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="snacks.js"></script>
   </head>
   <body>
     <div id="header">
       <img
-        src="https://fontmeme.com/permalink/180719/67429e6afec53d21d64643101c43f029.png"
+        src="https://www.pinclipart.com/picdir/big/243-2437787_corner-store-clip-art-png-download.png"
         alt="header"
       />
     </div>
 
     <div class="container">
       <form class="add-form">
-        <h3>Create a toy!</h3>
+        <h3>Add a snack!</h3>
 
         <input
           type="text"
           name="name"
           value=""
-          placeholder="Enter a toy's name..."
+          placeholder="Enter a snack brand..."
           class="input-text"
         />
         <br />
-        <input
-          type="text"
-          name="image"
-          value=""
-          placeholder="Enter a toy's image URL..."
-          class="input-text"
-        />
-        <br />
-        <input
+      <input
+      type="text"
+      name="flavor"
+      value=""
+      placeholder="Enter a snack's flavor..."
+      class="input-text"
+    />
+    <input
+    type="text"
+    name="calories"
+    value=""
+    placeholder="Enter a snack's calories per serving..."
+    class="input-text"
+  />
+  <br />
+    <input
+    type="text"
+    name="image"
+    value=""
+    placeholder="Enter a snack's image..."
+    class="input-text"
+  />
+  <br />
+        <input 
           type="submit"
           name="submit"
-          value="Create New Toy"
+          value="Add a new snack"
           class="submit"
         />
       </form>
     </div>
 
     <div id="collection">
-      <div class="card">
-        <h2>Rex</h2>
-        <img alt="Rex" src="http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png" class="avatar" />
-        <button class="btn">Remove</button>
-      </div>
     </div>
   </body>
 </html>

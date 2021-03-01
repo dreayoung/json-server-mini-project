@@ -2,52 +2,51 @@
   "snacks": [
     {
       "id": 1,
-      "brand_name": "doritos",
+      "brand name": "doritos",
       "calories": "150",
+      "product type": "tortilla chips",
       "flavor": "nacho cheese",
       "image": "https://www.doritos.com/sites/doritos.com/files/2018-08/new-nacho-cheese.png"
     },
     {
       "id": 2,
-      "brand_name": "lays",
+      "brand name": "lays",
       "calories": "230",
+      "product type": "potato chips",
       "flavor": "barbecue",
       "image": "https://www.pngkit.com/png/full/389-3899532_lays-barbecue-flavored-potato-chips-barbecue-lays-family.png"
     },
     {
       "id": 3,
-      "brand_name": "BOOMCHICKAPOP",
+      "brand name": "Angie's BOOMCHICKAPOP",
       "calories": "140",
+      "product type": "popcorn",
       "flavor": "sweet & salty kettle corn",
       "image": "https://www.boomchickapop.com/sites/g/files/qyyrlu771/files/images/products/sweet-salty-kettle-corn-42134.png"
     },
     {
       "id": 4,
-      "brand_name": "cheetos",
+      "brand name": "cheetos",
       "calories": "380",
+      "product type": "cheese puffs",
       "flavor": "flaming hot",
       "image": "https://cdn.shopify.com/s/files/1/0071/0420/0763/products/Cheetos_Crunchy_Flamin_Hot_Cheese_Snacks_3.5_oz_grande.png?v=1564252504"
     },
     {
       "id": 5,
-      "brand_name": "ruffles",
+      "brand name": "ruffles",
       "calories": "150",
+      "product type": "potato chips",
       "flavor": "sour cream & onion",
       "image": "https://www.seekpng.com/png/full/426-4266530_ruffles-sour-cream-n-onion-ruffles-sour-cream.png"
     },
     {
       "id": 6,
-      "brand_name": "terra",
+      "brand name": "terra",
       "calories": "130",
+      "product type": "plantain chips",
       "flavor": "sweet plantains",
       "image": "https://lh3.googleusercontent.com/proxy/M_ncqxkTEDLJTHOVbMl1RE6OJUpKEvyrp0eFNIutLbkWgn5ttLmCQ8RP0n7zlWMcvK3jjU6ocTzPErN-0ptMRpOCKIIY7YNrFokTOjkoX5JbFzKSbJ58MYwSIHP4krN0uaplN6ux9F_mhx_oszMSJ6IZE2M"
-    },
-    {
-      "brand_name": "doritos",
-      "calories": "150",
-      "flavor": "nacho cheese",
-      "image": "https://www.doritos.com/sites/doritos.com/files/2018-08/new-nacho-cheese.png",
-      "id": 10
     }
   ]
 }
